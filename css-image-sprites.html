@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CSS Image Sprites</title>
+        <style>
+            #navlist{
+                position:relative;
+                
+            }
+            #navlist li{
+                position: absolute;
+               margin: 0;
+               padding: 0;
+               list-style-type: none;
+               display: inline-block;
+
+            }
+            #navlist li,
+            #navlist a{
+                height: 44px;
+               display: block;
+            }
+            #home{
+                background: url(images/WhatsApp\ Image\ 2021-12-30\ at\ 8.03.28\ AM.jpeg);
+                background-position: 0 0;
+                width: 46px;
+                left:0px;
+            }
+            #prev{
+                background: url(images/WhatsApp\ Image\ 2021-12-30\ at\ 8.03.28\ AM.jpeg);
+                background-position: 87px 0;
+                width:43px;
+                left:90px;
+            }
+            #next{
+                background: url(images/WhatsApp\ Image\ 2021-12-30\ at\ 8.03.28\ AM.jpeg);
+                background-position: 43px 0;
+                width:43px;
+                left:184px;
+            }
+        </style>
+
+    </head>
+    <body>
+        <ul id="navlist">
+            <li id="home"><a href="http://google.com" target=_blank></a></li>
+            <li id="prev"><a href="https://www.microsoft.com/" target=_blank></a></li>
+            <li id="next"><a href="https://uxfactory.in/" target=_blank></a></li>
+        </ul>
+    </body>
+</html>

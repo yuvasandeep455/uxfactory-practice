@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>HTML FORMS</title>
+    </head>
+    <body>
+        <form action="/registration.aspx" name="registration" method="get">
+            <label for="FName">First Name:</label><br>
+            <input type="text" id="FName" name="FName" value="yuva" disabled><br><br>
+            <label for="MName">Middle Name:</label><br>
+            <input type="text" id="MName" name="MName" value="Sandeep" readonly><br><br>
+            <label for="LName">Last Name:</label><br>
+            <input type="text" id="LName" name="LName" required><br><br>
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email"><br><br>
+            <label for="PhoneNumber">Contact Number:</label><br>
+            <input type="number" id="PhoneNumber" name="PhoneNumber"><br><br>
+
+            <label for="userpassword">Password:</label><br>
+            <input type="password" id="userpassword" name="userpassword"><br><br>
+            <label for="city">City:</label><br>
+            <select id="city" id="city" name="city"><br>
+                <option value="">Choose City</option>
+                <option value="Hyderabad">Hyderabad</option>
+                <option value="Vizag">Vizag</option>
+                <option value="Rajahmundry">Rajahmundry</option>
+                <option value="Kakinada">Kakinada</option>
+                <option value="Tirupathi">Tirupathi</option>
+                <option value="Vijaywada">Vijaywada</option>
+            </select><br><br>
+            <label for="about">About Yourself</label><br>
+            <textarea name="about" rows="10" cols="30"></textarea><br><br>
+            <label>Choose Gender</label>
+            <input type= "radio" id="male" name="Gender" value="male">
+            <label for="male">male</label>
+            <input type="radio" id="Female" name="Gender" value="Female">
+            <label for="Female">Female</label>
+            <input type="radio" id="Trans Gender" name="Gender" value="Trans Gender">
+            <label for="Trans Gender">TransGender</label><br><br>
+            <label>Choose Your Education</label>
+            <input type="checkbox" id="education" name="education1" value="SSC">
+            <label for="education1">SSC</label>
+            <input type="checkbox" id="education" name="education2" value="Intermediate">
+            <label for="education2">Intermediate</label>
+            <input type="checkbox" id="education" name="education3" value="BTech">
+            <label for="education3">BTech</label>
+            <input type="checkbox" id="education" name="education4" value="MBA">
+            <label for="education4">MBA</label><br><br>
+            <label for="favcolor">Choose Your Color:</label>
+            <input type="color" id="favcolor" name="favcolor"><br><br>
+            <label for="birthday">Birthday:</label>
+            <input type="date" id="birthday" name="birthday"><br><br>
+            <label for="fileupload">Upload File</label>
+            <input type="file" id="file" name="file"><br><br>
+            <input type="hidden" id="cusId" name="cusId" value="255">
+            <label for="pincode">pincode:</label>
+            <input type="number" id="pincode" name="pincode" min="1" max="5" value="3" step="2"><br><br>
+            <label for="vol">Volume (between 0 to 50):</label>
+            <input type="range" id="vol" min="0" max="50"><br><br>
+            <label for="url">URL:</label>
+            <input type="url" id="url" name="url"><br><br>
+
+            <input type="submit" value="Register" name="register">
+            <input type="reset">
+        </form>
+    </body>
+</html>
+    
+
+            
+
+    

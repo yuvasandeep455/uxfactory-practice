@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>CSS Media Queryes</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      .column {
+        width: 25%;
+        float: left;
+      }
+      img {
+        border: 1px solid orange;
+      }
+      h2 {
+        text-align: center;
+      }
+
+      /* Extra Small Devices(Phones,600px and down) */
+
+      @media only screen and (max-width:600px) {
+        .column {
+          width: 100%;
+        }
+      }
+      @media only screen and (min-width:600px) {
+        .column {
+          width: 50%;
+          color: crimson;
+        }
+      }
+      @media only screen and (min-width:768px){
+          .column{
+              width: 33%;
+              color:red;
+          }
+      }
+      @media only screen and (min-width:1000px){
+          .column{
+              width:25%;
+              color:orange;
+          }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="row">
+      <div class="column">
+        <h2>Search enging Optimization</h2>
+        <!-- <p>Some Text here</p> -->
+        <img
+          src="images/istockphoto-1316590670-170667a.jpg"
+          alt="SEO"
+          width="100%"
+        />
+      </div>
+
+      <div class="column" >
+        <h2>Search enging marketing</h2>
+        <!-- <p>Some Text here</p> -->
+        <img
+          src="images/istockphoto-1316590670-170667a.jpg"
+          alt="SMO"
+          width="100%"
+        />
+      </div>
+      <div class="column" >
+        <h2>Social Media Marketing</h2>
+        <!-- <p>Some Text here</p> -->
+        <img
+          src="images/istockphoto-1316590670-170667a.jpg"
+          alt="SMM"
+          width="100%"
+        />
+      </div>
+      <div class="column">
+        <h2>Social Media Optimization</h2>
+        <!-- <p>Some Text here</p> -->
+        <img
+          src="images/istockphoto-1316590670-170667a.jpg"
+          alt="SMO"
+          width="100%"
+        />
+      </div>
+    </div>
+  </body>
+</html>

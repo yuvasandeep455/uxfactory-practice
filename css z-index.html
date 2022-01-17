@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            CSS Z-INDEX
+        </title>
+        <style>
+            .box-1{
+                position:relative;
+                padding:50px;
+                border:2px solid red;
+                width:50%;
+                margin-left: 200px;
+                background-color: coral;
+                text-align: center;
+                z-index: 3;
+            }
+            .box-2{
+                position:absolute;
+                padding:100px;
+                border: 2px solid green;
+                width:75%;
+                background-color: darkgray;
+                text-align: left;
+                top:0;
+                z-index: 2;
+            }
+            .box-3{
+                position: absolute;
+                padding:150px;
+                border:2px solid yellow;
+                width: 100%;
+                background-color: darkseagreen;
+                
+                top:0;
+                z-index: 1;
+
+            }
+            
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="box-1">
+                <h1>1</h1>
+            </div>
+            <div class="box-2">
+                <h2>2</h2>
+            </div>
+            <div class="box-3">
+                <h2>3</h2>
+            </div>
+        </div>
+    </body>
+</html>

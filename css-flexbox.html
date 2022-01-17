@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>CSS FLEX BOX</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      .flex-container {
+        background-color: rgb(221, 188, 221);
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+
+      .flex-container > div {
+        background-color: rgb(223, 139, 109);
+        padding: 20px;
+        margin: 10px;
+        font-size: 30px;
+        width: 100px;
+        color: white;
+      }
+      @media only screen and (max-width: 800px) {
+        .flex-container {
+          flex-direction: column;
+          background-color: rgb(118, 117, 172);
+        }
+        .flex-container > div {
+          background-color: turquoise;
+          color: red;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="flex-container">
+      <div style="order: 4">1</div>
+      <div style="order: 1">2</div>
+      <div style="order: 2">3</div>
+      <div style="order: 3">4</div>
+      <div style="flex-grow: 1">5</div>
+      <div style="flex-basis: 200px">6</div>
+      <div>7</div>
+      <div>8</div>
+      <div>9</div>
+      <div>10</div>
+      <div>11</div>
+      <div>12</div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Accordation</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="container mt-5"><h1>Example of Accordation</h1></div>
+    <div class="container">
+      <div class="accordion" id="accordionExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingOne">
+            <button
+              class="accordion-button"
+              type="button"
+              data-bs-toggle="collapse"
+              aria-expanded="true"
+              aria-controls="collapseOne"
+            >
+              Digital Marketing
+            </button>
+          </h2>
+          <div
+            id="collapseOne"
+            class="accordion-collapse collapse show"
+            aria-labelledby="headingOne"
+            data-bs-parent="#accordionExample"
+          >
+            <div class="accordion-body">
+              Digital marketing is the component of marketing that uses internet
+              and online based digital technologies such as desktop computers,
+              mobile phones and other digital media and platforms to promote
+              products and services
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingTwo">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseTwo"
+              aria-expanded="false"
+              aria-controls="collapseTwo"
+            >
+              HTML
+            </button>
+          </h2>
+          <div
+            id="collapseTwo"
+            class="accordion-collapse collapse"
+            aria-labelledby="headingTwo"
+            data-bs-parent="#accordionExample"
+          >
+            <div class="accordion-body">
+              The HyperText Markup Language, or HTML is the standard markup
+              language for documents designed to be displayed in a web browser.
+              It can be assisted by technologies such as Cascading Style Sheets
+              and scripting languages such as JavaScript.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingThree">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseThree"
+              aria-expanded="false"
+              aria-controls="collapseThree"
+            >
+              Boostrap
+            </button>
+          </h2>
+          <div
+            id="collapseThree"
+            class="accordion-collapse collapse"
+            aria-labelledby="headingThree"
+            data-bs-parent="#accordionExample"
+          >
+            <div class="accordion-body">
+              Bootstrap is a free and open-source CSS framework directed at
+              responsive, mobile-first front-end web development. It contains
+              CSS- and JavaScript-based design templates for typography, forms,
+              buttons, navigation, and other interface components.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingFour">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseFour"
+              aria-expanded="false"
+              aria-controls="collapseThree"
+            >
+              React JS
+            </button>
+          </h2>
+          <div
+            id="collapseFour"
+            class="accordion-collapse collapse"
+            aria-labelledby="headingFour"
+            data-bs-parent="#accordionExample"
+          >
+            <div class="accordion-body">
+              React is a free and open-source front-end JavaScript library for
+              building user interfaces based on UI components. It is maintained
+              by Meta and a community of individual developers and companies.
+              React can be used as a base in the development of single-page or
+              mobile applications.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Alert -->
+
+    <div class="container mt-3">
+      <div id="liveAlertPlaceholder"></div>
+      <button type="button" class="btn btn-primary" id="liveAlertBtn">
+        Show live alert
+      </button>
+      <script>
+        var alertPlaceholder = document.getElementById("liveAlertPlaceholder");
+        var alertTrigger = document.getElementById("liveAlertBtn");
+
+        function alert(message, type) {
+          var wrapper = document.createElement("div");
+          wrapper.innerHTML =
+            '<div class="alert alert-' +
+            type +
+            ' alert-dismissible" role="alert">' +
+            message +
+            '<button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button></div>';
+
+          alertPlaceholder.append(wrapper);
+        }
+
+        if (alertTrigger) {
+          alertTrigger.addEventListener("click", function () {
+            alert("Nice, you triggered this alert message!", "success");
+          });
+        }
+      </script>
+    </div>
+    <!-- Baddge -->
+    <div class="container mt-3">
+      <button type="button" class="btn btn-primary position-relative">
+        Inbox
+        <span
+          class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger"
+        >
+          99+
+          <span class="visually-hidden">unread messages</span>
+        </span>
+      </button>
+    </div>
+    <!-- Breadcrumb -->
+    <div class="container mt-3">
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="#">HTML</a></li>
+          <li class="breadcrumb-item"><a href="#">css</a></li>
+          <li class="breadcrumb-item active" aria-current="page">Boostrap</li>
+        </ol>
+      </nav>
+    </div>
+    <!-- Button -->
+    <div class="container mt-3">
+        <button type="button" class="btn btn-primary">Primary</button>
+<button type="button" class="btn btn-secondary">Secondary</button>
+<button type="button" class="btn btn-success">Success</button>
+<button type="button" class="btn btn-danger">Danger</button>
+<button type="button" class="btn btn-warning">Warning</button>
+<button type="button" class="btn btn-info">Info</button>
+<button type="button" class="btn btn-light">Light</button>
+<button type="button" class="btn btn-dark">Dark</button>
+
+<button type="button" class="btn btn-link">Link</button>
+    </div>
+    <div class="container mt-3">
+      <a
+        href="#"
+        class="btn btn-primary btn-lg disabled"
+        tabindex="-1"
+        role="button"
+        aria-disabled="true"
+        >Submit</a
+      >
+      <a
+        href="#"
+        class="btn btn-secondary btn-lg disabled"
+        tabindex="-1"
+        role="button"
+        aria-disabled="true"
+        >Cancel</a
+      >
+    </div>
+    <!-- Card -->
+    <div class="container mt-3">
+      <div class="card" style="width: 18rem">
+        <img src="images/download.jpg" class="card-img-top" alt="image1" />
+        <div class="card-body">
+          <p class="card-text">
+            Some quick example text to build on the card title and make up the
+            bulk of the card's content.
+          </p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>HTML Table</title>
+    <link rel="icon" type="image/icon" href="images/icons8-month-view-48.png" />
+    <style>
+      #tbl1 {
+        border-collapse: collapse;
+        width: 100%;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+      }
+      td,th {
+        border: 1px solid red;
+        padding: 10px;
+      }
+      /* th{color: brown;} */
+      #tbl1 tr:hover{
+          background-color: orange;
+          color:white;
+      }
+      #tbl1 tr:nth-child(even){
+          color:red;
+      }
+      #tbl1 th{
+        background-color: coral;
+        color: cornsilk
+
+      }
+    </style>
+  </head>
+  <body>
+    <table id="tbl1">
+      <tr>
+        <th>Month</th>
+        <th>EMP Name</th>
+        <th>EMP ID</th>
+        <th>Designation</th>
+        <th>Leaves Taken</th>
+      </tr>
+      <tr>
+        <th>February</th>
+        <td>Pavan</td>
+        <td>0002</td>
+        <td rowspan="2">UI Devloper</td>
+        <td>01</td>
+      </tr>
+      <tr>
+        <th>March</th>
+        <td>Srinivas</td>
+        <td>0003</td>
+        <!-- <td>UI Devloper</td> -->
+        <td>03</td>
+      </tr>
+      <tr>
+        <th>May</th>
+        <td>Krishna</td>
+        <td>0005</td>
+        <td>Web Devloper</td>
+        <td>01</td>
+      </tr>
+      <tr>
+        <th>April</th>
+        <td>Swamy</td>
+        <td>0004</td>
+        <td rowspan="2">UI Devloper</td>
+        <td>01</td>
+      </tr>
+      <tr>
+        <th>May</th>
+        <td>Yuva Sandeep</td>
+        <td>0001</td>
+        <!-- <td>UI Devloper</td> -->
+        <td>01</td>
+      </tr>
+    </table>
+  </body>
+</html>
